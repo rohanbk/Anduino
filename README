@@ -1,0 +1,8 @@
+ANDUINO README
+
+This Android program will establish a Bluetooth connection with a Bluetooth Arduino board and receive any data that the board writes to its virtual Serial connection. Anyone planning to use this code must ensure that each data record sent by the Arduino is encapsulated in parentheses, and followed by a new-line. 
+
+Example:
+- (Record 1)\n(Record 2)\n....etc
+
+In addition to this, the readingCallback method in the Activity class must be modified so that when data is received by the phone, the user has to do something with it (i.e. process it further, write to file on the SD card, etc.). 
